@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="game">
+            <div class="game-card">
+                <h1>Угадай число</h1>
+                <p class="description">Введите имя и попробуйте угадать число от 1 до 100.</p>
+
+                <div class="field">
+                    <label for="playerName">Имя игрока</label>
+                    <input type="text" id="playerName" placeholder="Например: Анна">
+                </div>
+
+                <div class="field">
+                    <label for="guessInput">Ваше число</label>
+                    <input type="text" id="guessInput" placeholder="От 1 до 100">
+                </div>
+
+                <div class="buttons">
+                    <button id="checkButton">Проверить</button>
+                    <button id="newGameButton" class="secondary">Новая игра</button>
+                </div>
+
+                <div id="message" class="message">Игра готова. Введите имя и число.</div>
+                <div class="attempts">Количество попыток: <span id="attemptsCount">0</span></div>
+            </div>
+
+            <div class="records-card">
+                <div class="records-header">
+                    <h2>Таблица рекордов</h2>
+                    <button id="clearRecordsButton" class="small-button">Очистить</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Место</th>
+                            <th>Имя</th>
+                            <th>Попытки</th>
+                            <th>Дата</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recordsBody">
+                        <tr>
+                            <td colspan="4">Рекордов пока нет</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
