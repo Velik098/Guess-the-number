@@ -25,8 +25,8 @@ body {
     gap: 20px;
 }
 
-.game-card,
-.records-card {
+.game-card, 
+.records-card { 
     background: #ffffff;
     border: 1px solid #dde2e7;
     border-radius: 8px;

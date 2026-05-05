@@ -72,7 +72,7 @@ function handleAnswer() {
 
     currentPlayer = playerNameInput.value.trim();
     playerNameInput.disabled = true;
-
+ 
     const guess = Number(guessInput.value.trim());
     attempts++;
     attemptsCount.textContent = attempts;
