@@ -69,7 +69,7 @@ function handleAnswer() {
         showMessage(error, 'error');
         return;
     }
-
+ 
     currentPlayer = playerNameInput.value.trim();
     playerNameInput.disabled = true;
  
