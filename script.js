@@ -60,7 +60,8 @@ function handleAnswer() {
     if (gameFinished) {
         showMessage('Игра уже завершена. Нажмите "Новая игра".', 'error');
         return;
-    }
+    } 
+ 
 
     const error = validateInput();
 
